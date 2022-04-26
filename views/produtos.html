@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale-1.0">
+    <title>Projeto Integrador</title>
+    <link href="css\style.css" rel="stylesheet">
+</head>
+  <body>
+  <header style="background-color: yellow">
+    <div style="display: flex;">
+      <div>
+      <a style="display:inline; 
+                text-align:left;
+                margin-left: 20px;" 
+       href="index.html" title="Home"><img src="https://img.icons8.com/color/344/espn.png" width="60" height="54"></a>
+      </div>
+      
+      <div style="background-color: white; 
+              border: solid 1px; 
+              border-radius: 20px; 
+              height: 30px;
+              width: 220px;
+              margin-left: 180px;
+              margin-top: 18.5px;">
+        <input type="text" style="float: left; 
+                                  background-color: none; 
+                                  border-radius: 20px;
+                                  height: 24px;" placeholder="Buscar..."/
+                                  >
+        <a href=""><img src="https://img.icons8.com/ios-filled/344/fa314a/search--v1.png"
+             style="padding-left: 5px; 
+                    font-style: italic; 
+                    font-size: 18px; 
+                    border: none; 
+                    height: 24px; 
+                    width: 34px;
+                    margin-top: 3px;" alt="Buscar"/></a>
+      </div>
+      <br>
+      <div style="background-color: white; 
+                  border: solid 1px; 
+                  border-radius: 20px; 
+                  width: 130px;
+                  height: 30px;
+                  margin-left: 220px;
+                  margin-top: 18px;">
+        <a type= "text" style="display:inline; 
+                               text-align:left;" href="index.html">
+         <img src="https://img.icons8.com/material-rounded/344/fa314a/user-male-circle.png" 
+           style="padding-left: 5px; 
+                  font-style: italic; 
+                  font-size: 18px; 
+                  border: none; 
+                  height: 30px; 
+                  width: 30px;" alt="Usuário"/></a>
+        
+      </div>
+       <br>
+      <div style="background-color: white; 
+                  border: solid 1px; 
+                  border-radius: 20px;
+                  height: 30px;
+                  width: 130px;
+                  margin-left: 15px;
+                  margin-top: 18px;">
+        <a type= "text" style="display:inline; 
+                               text-align:left;" href="index.html">
+         <img src="https://img.icons8.com/material-rounded/344/fa314a/sell-stock.png" 
+           style="padding-left: 10px; 
+                  font-style: italic; 
+                  font-size: 18px; 
+                  border: none; 
+                  height: 30px; 
+                  width: 30px;" alt="Carrinho"/></a>
+        
+      </div>
+    </div>
+  </header>
+  
+  <nav style="margin-top: 9px;
+              background-color: blue;">
+    <select name="select" style="height: 30px; width: 249px;">
+          <option value="valor1" selected>TIMES DO BRASIL</option>
+          <option value="valor2" >América-MG</option>
+          <option value="valor3">Athletico-PR</option>
+          <option value="valor2" >Atlético-GO</option>
+          <option value="valor3">Atlético-MG</option>
+          <option value="valor2" >Avaí</option>
+          <option value="valor3">Botafogo</option>
+          <option value="valor2" >Ceará</option>
+          <option value="valor3">Corinthians</option>
+          <option value="valor2" >Coritiba</option>
+          <option value="valor3">Cuiabá</option>
+          <option value="valor2" >Flamengo</option>
+          <option value="valor3">Fluminense</option>
+          <option value="valor2" >Fortaleza</option>
+          <option value="valor3">Goiás</option>
+          <option value="valor2" >Internacional</option>
+          <option value="valor3">Juventude</option>
+          <option value="valor2" >Palmeiras</option>
+          <option value="valor3">Red Bull Bragantino</option>
+          <option value="valor2" >Santos</option>
+          <option value="valor3">São Paulo</option>
+        </select>
+
+        <select name="select" style="height: 30px; width: 249px;">
+          <option value="valor1" selected>TIMES INTERNACIONAIS</option>
+          <option value="valor2" >Real Madrid</option>
+          <option value="valor3">Barcelona</option>
+          <option value="valor2" >Bayern Munchen</option>
+          <option value="valor3">Juventus</option>
+          <option value="valor2" >Milan</option>
+          <option value="valor3">Boca Juniors</option>
+          <option value="valor2" >Liverpool</option>
+          <option value="valor3">Manchester United</option>
+          <option value="valor2" >Ajax</option>
+          <option value="valor3">River Plate</option>
+          <option value="valor2" >Peñarol</option>
+          <option value="valor3">Internazionale de Milão</option>
+          <option value="valor2" >Benfica</option>
+          <option value="valor3">Al Ahly</option>
+          <option value="valor2" >Porto</option>
+          <option value="valor3">Nacional-URU</option>
+          <option value="valor2" >Independiente-ARG</option>
+          <option value="valor3">Glasgow Rangers</option>
+          <option value="valor2" >Celtic</option>
+          <option value="valor3">Arsenal</option>
+        </select>
+
+        <select name="select" style="height: 30px; width: 249px;">
+          <option value="valor1" selected>SELEÇÕES</option>
+          <option value="valor2" >Brasil</option>
+          <option value="valor3">França</option>
+          <option value="valor2" >Bélgica</option>
+          <option value="valor3">Argentina</option>
+          <option value="valor2" >Inglaterra</option>
+          <option value="valor3">Itália</option>
+          <option value="valor2" >Espanha</option>
+          <option value="valor3">Portugal</option>
+          <option value="valor2" >México</option>
+          <option value="valor3">	Holanda</option>
+          <option value="valor2" >Dinamarca</option>
+          <option value="valor3">Alemanha</option>
+          <option value="valor2" >Uruguai</option>
+          <option value="valor3">Suíça</option>
+          <option value="valor2" >Estados Unidos</option>
+          <option value="valor3">Croácia</option>
+          <option value="valor2" >Colômbia</option>
+          <option value="valor3">País de Gales</option>
+          <option value="valor2" >Suécia</option>
+          <option value="valor3">	Senegal</option>
+        </select>
+
+        <select name="select" style="height: 30px; width: 249px;">
+          <option value="valor1" selected>MAIS OPÇÕES</option>
+          <option value="valor2" >América-MG</option>
+          <option value="valor3">Athletico-PR</option>
+          <option value="valor2" >Atlético-GO</option>
+          <option value="valor3">Atlético-MG</option>
+          <option value="valor2" >Avaí</option>
+          <option value="valor3">Botafogo</option>
+          <option value="valor2" >Ceará</option>
+          <option value="valor3">Corinthians</option>
+          <option value="valor2" >Coritiba</option>
+          <option value="valor3">Cuiabá</option>
+          <option value="valor2" >Flamengo</option>
+          <option value="valor3">Fluminense</option>
+          <option value="valor2" >Fortaleza</option>
+          <option value="valor3">Goiás</option>
+          <option value="valor2" >Internacional</option>
+          <option value="valor3">Juventude</option>
+          <option value="valor2" >Palmeiras</option>
+          <option value="valor3">Red Bull Bragantino</option>
+          <option value="valor2" >Santos</option>
+          <option value="valor3">São Paulo</option>
+        </select>
+  </nav>
+  <main style="background-color: green;">
+    <section class="Catalogo" id="catalogo" style="display: flex ;
+                                                   margin-top: 12px;">
+        <div class="card-wrapper">
+            <div class="card-item">
+                <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+                <div class="card-content">
+                  <h3>Camisa Varzea 01</h3>
+                  <p>
+                    Resumo e especificações sobre o produto.
+                  </p>
+                  <button type="button">COMPRAR!</button>
+                </div>
+              </div>
+          <div class="card-item">
+            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+            <div class="card-content">
+              <h3>Camisa Varzea 01</h3>
+              <p>
+                Resumo e especificações sobre o produto.
+              </p>
+              <button type="button">COMPRAR!</button>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+            <div class="card-content">
+              <h3>Camisa Varzea 01</h3>
+              <p>
+                Resumo e especificações sobre o produto.
+              </p>
+              <button type="button">COMPRAR!</button>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+            <div class="card-content">
+              <h3>Camisa Varzea 01</h3>
+              <p>
+                Resumo e especificações sobre o produto.
+              </p>
+              <button type="button">COMPRAR!</button>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+            <div class="card-content">
+              <h3>Camisa Varzea 01</h3>
+              <p>
+                Resumo e especificações sobre o produto.
+              </p>
+              <button type="button">COMPRAR!</button>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+            <div class="card-content">
+              <h3>Camisa Varzea 01</h3>
+              <p>
+                Resumo e especificações sobre o produto.
+              </p>
+              <button type="button">COMPRAR!</button>
+            </div>
+        </div>
+        <h3>Os mais vendidos</h3>
+    </div>
+    <div class="card-wrapper">
+        <div class="card-item">
+            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+            <div class="card-content">
+              <h3>Camisa Varzea 01</h3>
+              <p>
+                Resumo e especificações sobre o produto.
+              </p>
+              <button type="button">COMPRAR!</button>
+            </div>
+          </div>
+      <div class="card-item">
+        <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+        <div class="card-content">
+          <h3>Camisa Varzea 01</h3>
+          <p>
+            Resumo e especificações sobre o produto.
+          </p>
+          <button type="button">COMPRAR!</button>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+        <div class="card-content">
+          <h3>Camisa Varzea 01</h3>
+          <p>
+            Resumo e especificações sobre o produto.
+          </p>
+          <button type="button">COMPRAR!</button>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+        <div class="card-content">
+          <h3>Camisa Varzea 01</h3>
+          <p>
+            Resumo e especificações sobre o produto.
+          </p>
+          <button type="button">COMPRAR!</button>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+        <div class="card-content">
+          <h3>Camisa Varzea 01</h3>
+          <p>
+            Resumo e especificações sobre o produto.
+          </p>
+          <button type="button">COMPRAR!</button>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
+        <div class="card-content">
+          <h3>Camisa Varzea 01</h3>
+          <p>
+            Resumo e especificações sobre o produto.
+          </p>
+          <button type="button">COMPRAR!</button>
+        </div>
+    </div>
+    </section>
+  </main>
+  <footer style="background-color: silver;">
+    <div>
+        
+        <div>
+        <p>Copyright ©2022, TODOS OS DIREITOS RESERVADOS. Todo o conteúdo do site, todas as fotos, imagens, 
+        logotipos, marcas, dizeres, som, software, conjunto imagem, layout, trade dress, aqui veiculados são 
+        exclusivamente para uso acadêmico.</p>
+        <p>Curso Fullstack Web - Turma 0222CDFSPCN05BRED</p>
+
+          <div  style="display: flex;">
+            <div style="margin-left: 145px">
+              <img src="https://cdn.icon-icons.com/icons2/818/PNG/128/Social-01-Facebook-Outline_icon-icons.com_66389.png" alt="Facebook" height ="80" width="100" />
+              <button type="button">none</button>
+            </div>
+            <div style="margin-left: 145px">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/instagram-logo-3603536-3004252.png"                               alt="Instagram" height ="80" width="100" />
+              <button type="button">none</button>
+            </div>
+            <div style="margin-left: 145px">
+              <img src="https://e7.pngegg.com/pngimages/957/382/png-clipart-computer-icons-twitter-leaf-branch.png"                   alt="Twitter" height ="80" width="100" />
+              <button type="button">none</button>
+            </div>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
