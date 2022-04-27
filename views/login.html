@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale-1.0">
+    <title>Projeto Integrador</title>
+    <link href="css\style.css" rel="stylesheet">
+</head>
+  <body>
+  <header style="background-color: yellow">
+    <div style="display: flex;">
+      <div>
+      <a style="display:inline; 
+                text-align:left;
+                margin-left: 20px;" 
+       href="index.html" title="Home"><img src="https://img.icons8.com/color/344/espn.png" width="60" height="54"></a>
+      </div>
+      
+      <div style="background-color: white; 
+              border: solid 1px; 
+              border-radius: 20px; 
+              height: 30px;
+              width: 220px;
+              margin-left: 180px;
+              margin-top: 18.5px;">
+        <input type="text" style="float: left; 
+                                  background-color: none; 
+                                  border-radius: 20px;
+                                  height: 24px;" placeholder="Buscar..."/
+                                  >
+        <a href=""><img src="https://img.icons8.com/ios-filled/344/fa314a/search--v1.png"
+             style="padding-left: 5px; 
+                    font-style: italic; 
+                    font-size: 18px; 
+                    border: none; 
+                    height: 24px; 
+                    width: 34px;
+                    margin-top: 3px;" alt="Buscar"/></a>
+      </div>
+      <br>
+      <div style="background-color: white; 
+                  border: solid 1px; 
+                  border-radius: 20px; 
+                  width: 130px;
+                  height: 30px;
+                  margin-left: 220px;
+                  margin-top: 18px;">
+        <a type= "text" style="display:inline; 
+                               text-align:left;" href="index.html">
+         <img src="https://img.icons8.com/material-rounded/344/fa314a/user-male-circle.png" 
+           style="padding-left: 5px; 
+                  font-style: italic; 
+                  font-size: 18px; 
+                  border: none; 
+                  height: 30px; 
+                  width: 30px;" alt="Usuário"/></a>
+        
+      </div>
+       <br>
+      <div style="background-color: white; 
+                  border: solid 1px; 
+                  border-radius: 20px;
+                  height: 30px;
+                  width: 130px;
+                  margin-left: 15px;
+                  margin-top: 18px;">
+        <a type= "text" style="display:inline; 
+                               text-align:left;" href="index.html">
+         <img src="https://img.icons8.com/material-rounded/344/fa314a/sell-stock.png" 
+           style="padding-left: 10px; 
+                  font-style: italic; 
+                  font-size: 18px; 
+                  border: none; 
+                  height: 30px; 
+                  width: 30px;" alt="Carrinho"/></a>
+        
+      </div>
+    </div>
+  </header>
+  
+  <nav style="margin-top: 9px;
+              background-color: blue;">
+    <select name="select" style="height: 30px; width: 249px;">
+          <option value="valor1" selected>TIMES DO BRASIL</option>
+          <option value="valor2" >América-MG</option>
+          <option value="valor3">Athletico-PR</option>
+          <option value="valor2" >Atlético-GO</option>
+          <option value="valor3">Atlético-MG</option>
+          <option value="valor2" >Avaí</option>
+          <option value="valor3">Botafogo</option>
+          <option value="valor2" >Ceará</option>
+          <option value="valor3">Corinthians</option>
+          <option value="valor2" >Coritiba</option>
+          <option value="valor3">Cuiabá</option>
+          <option value="valor2" >Flamengo</option>
+          <option value="valor3">Fluminense</option>
+          <option value="valor2" >Fortaleza</option>
+          <option value="valor3">Goiás</option>
+          <option value="valor2" >Internacional</option>
+          <option value="valor3">Juventude</option>
+          <option value="valor2" >Palmeiras</option>
+          <option value="valor3">Red Bull Bragantino</option>
+          <option value="valor2" >Santos</option>
+          <option value="valor3">São Paulo</option>
+        </select>
+
+        <select name="select" style="height: 30px; width: 249px;">
+          <option value="valor1" selected>TIMES INTERNACIONAIS</option>
+          <option value="valor2" >Real Madrid</option>
+          <option value="valor3">Barcelona</option>
+          <option value="valor2" >Bayern Munchen</option>
+          <option value="valor3">Juventus</option>
+          <option value="valor2" >Milan</option>
+          <option value="valor3">Boca Juniors</option>
+          <option value="valor2" >Liverpool</option>
+          <option value="valor3">Manchester United</option>
+          <option value="valor2" >Ajax</option>
+          <option value="valor3">River Plate</option>
+          <option value="valor2" >Peñarol</option>
+          <option value="valor3">Internazionale de Milão</option>
+          <option value="valor2" >Benfica</option>
+          <option value="valor3">Al Ahly</option>
+          <option value="valor2" >Porto</option>
+          <option value="valor3">Nacional-URU</option>
+          <option value="valor2" >Independiente-ARG</option>
+          <option value="valor3">Glasgow Rangers</option>
+          <option value="valor2" >Celtic</option>
+          <option value="valor3">Arsenal</option>
+        </select>
+
+        <select name="select" style="height: 30px; width: 249px;">
+          <option value="valor1" selected>SELEÇÕES</option>
+          <option value="valor2" >Brasil</option>
+          <option value="valor3">França</option>
+          <option value="valor2" >Bélgica</option>
+          <option value="valor3">Argentina</option>
+          <option value="valor2" >Inglaterra</option>
+          <option value="valor3">Itália</option>
+          <option value="valor2" >Espanha</option>
+          <option value="valor3">Portugal</option>
+          <option value="valor2" >México</option>
+          <option value="valor3">	Holanda</option>
+          <option value="valor2" >Dinamarca</option>
+          <option value="valor3">Alemanha</option>
+          <option value="valor2" >Uruguai</option>
+          <option value="valor3">Suíça</option>
+          <option value="valor2" >Estados Unidos</option>
+          <option value="valor3">Croácia</option>
+          <option value="valor2" >Colômbia</option>
+          <option value="valor3">País de Gales</option>
+          <option value="valor2" >Suécia</option>
+          <option value="valor3">	Senegal</option>
+        </select>
+
+        <select name="select" style="height: 30px; width: 249px;">
+          <option value="valor1" selected>MAIS OPÇÕES</option>
+          <option value="valor2" >América-MG</option>
+          <option value="valor3">Athletico-PR</option>
+          <option value="valor2" >Atlético-GO</option>
+          <option value="valor3">Atlético-MG</option>
+          <option value="valor2" >Avaí</option>
+          <option value="valor3">Botafogo</option>
+          <option value="valor2" >Ceará</option>
+          <option value="valor3">Corinthians</option>
+          <option value="valor2" >Coritiba</option>
+          <option value="valor3">Cuiabá</option>
+          <option value="valor2" >Flamengo</option>
+          <option value="valor3">Fluminense</option>
+          <option value="valor2" >Fortaleza</option>
+          <option value="valor3">Goiás</option>
+          <option value="valor2" >Internacional</option>
+          <option value="valor3">Juventude</option>
+          <option value="valor2" >Palmeiras</option>
+          <option value="valor3">Red Bull Bragantino</option>
+          <option value="valor2" >Santos</option>
+          <option value="valor3">São Paulo</option>
+        </select>
+  </nav>
+   <main style="background-color: coral;
+                display: flex;
+                justify-content: space-around;;
+                padding: 80px;">
+     
+       <fieldset style="border-radius: 10px;
+                        background-color: greenyellow;">
+          <div style="display: grid;
+                      font: 23px Arial, sans-serif;
+                      border-radius: 6px;">
+               <span>Login</span>
+               <span>
+                 <input 
+                    type="text" 
+                    name="login" 
+                    placeholder="E-mail"
+                    title="O seu email..."
+                    style="font: 23px Arial, sans-serif;
+                      border-radius: 6px;"
+                        />
+               </span>
+           </div>
+           <div style="display: grid;
+                       font: 23px Arial, sans-serif;
+                       border-radius: 6px;"/>
+               <span>Senha</span>
+               <span>
+                 <input 
+                    type="text" 
+                    name="senha" 
+                    placeholder="Senha"
+                    title="A sua senha..."
+                    style="font: 23px Arial, sans-serif;
+                           border-radius: 6px;"/>
+               </span>
+              <input type="submit" style="font: 23px Arial, sans-serif;
+                                   border-radius: 6px;
+                                   margin: 10px;
+                                   padding: 5px" value="Entrar"/>
+              <input type="submit" style="font: 23px Arial, sans-serif;
+                                   border-radius: 6px;
+                                   padding: 5px" value="Receber código de acesso"/>
+            </div>
+          <input type="submit" style="margin: 5px;" value="Esqueci a senha"/>
+            
+       </fieldset>
+     </div>
+     <div>
+       <fieldset style="border-radius: 10px;
+                        background-color: aquamarine;">
+       <p style="border: solid yellow 2px;
+                 border-radius: 6px;
+                 font: 23px Arial, sans-serif;
+                 padding: 10px;">Ainda não tenho cadastro</p>
+       <p style="border: solid blue 2px;
+                 border-radius: 6px;
+                 font: 23px Arial, sans-serif;
+                 padding: 10px">Cadastre-se agora mesmo <br>em nossa loja, é seguro, <br>rápido e muito fácil.</p>
+       <input type="submit" style="font: 23px Arial, sans-serif;
+                                   border-radius: 6px;
+                                   padding: 5px" value="Clique para se cadastrar"/>
+       </fieldset>
+     
+     <!--<div class="container" > 
+      <div class="content">      
+      FORMULÁRIO DE LOGIN
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Já sou cadastrado</h1> 
+          <p> 
+            <label for="nome_login">Seu nome</label>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Seu e-mail</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Logar" /> 
+          </p>
+           
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+ 
+      FORMULÁRIO DE CADASTRO
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+           
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+          </p>
+           
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+          </p>
+           
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>  -->
+
+     
+   </main>
+<footer style="background-color: silver;">
+        <div>
+                <div style="text-align: center;">
+                  <p>Copyright ©2022, TODOS OS DIREITOS RESERVADOS. Todo o conteúdo do site, todas as fotos, imagens, 
+                  logotipos, marcas, dizeres, som, software, conjunto imagem, layout, trade dress, aqui veiculados são 
+                  exclusivamente para uso acadêmico.</p>
+                </div>
+                <div style="text-align: center;">
+                  <p>Curso Fullstack Web - Turma 0222CDFSPCN05BRED</p>
+                </div>
+
+          <div  style="display: flex;
+                       justify-content: space-evenly;">
+            <div style="margin-left: 145px">
+              <img src="https://cdn.icon-icons.com/icons2/818/PNG/128/Social-01-Facebook-Outline_icon-icons.com_66389.png" alt="Facebook" height ="80" width="100" />
+              <button type="button">none</button>
+            </div>
+            <div style="margin-left: 145px">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/instagram-logo-3603536-3004252.png" alt="Instagram" height ="80" width="100" />
+              <button type="button">none</button>
+            </div>
+            <div style="margin-left: 145px">
+              <img src="https://e7.pngegg.com/pngimages/957/382/png-clipart-computer-icons-twitter-leaf-branch.png" alt="Twitter" height ="80" width="100" />
+              <button type="button">none</button>
+            </div>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
