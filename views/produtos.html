@@ -8,63 +8,59 @@
     <link href="css\style.css" rel="stylesheet">
 </head>
   <body>
-  <header style="background-color: yellow">
-    <div style="display: flex;">
-      <div>
-      <a style="display:inline; 
-                text-align:left;
-                margin-left: 20px;" 
-       href="index.html" title="Home"><img src="https://img.icons8.com/color/344/espn.png" width="60" height="54"></a>
+  <header>
+    <div class="container">
+      <div class="logo">
+      <a href="index.html" title="Home"><img src="https://img.icons8.com/color/344/espn.png" width="60" height="54"></a>
       </div>
       
-      <div style="background-color: white; 
-              border: solid 1px; 
-              border-radius: 20px; 
-              height: 30px;
-              width: 220px;
-              margin-left: 180px;
-              margin-top: 18.5px;">
+       <!-- Caixa de pesquisa-->
+      <div class="pesquisar">
+        <button class="Buscar">
         <input type="text" style="float: left; 
-                                  background-color: none; 
-                                  border-radius: 20px;
-                                  height: 24px;" placeholder="Buscar..."/
-                                  >
-        <a href=""><img src="https://img.icons8.com/ios-filled/344/fa314a/search--v1.png"
-             style="padding-left: 5px; 
-                    font-style: italic; 
-                    font-size: 18px; 
-                    border: none; 
-                    height: 24px; 
-                    width: 34px;
-                    margin-top: 3px;" alt="Buscar"/></a>
+                                  background-color: transparent; 
+                                  border-radius: 0 7px 7px 0;
+                                  font-size: 15px; 
+                                  padding-left:8px;
+                                  border-color: transparent;
+                                  width: 200px;
+                                  font-weight: bold;
+                                  height: 32px;" placeholder="Buscar..."/>
+                                
+                              
+        <a href="" title="Pesquisar"><img src="https://img.icons8.com/ios-filled/344/fa314a/search--v1.png"
+             style="padding-left: 10px; 
+             font-style: italic; 
+             font-size: 18px; 
+             border: none; 
+             height: 30px; 
+             width: 35px;" alt="Buscar"/>
+                    </button> </a>
       </div>
       <br>
-      <div style="background-color: white; 
-                  border: solid 1px; 
-                  border-radius: 20px; 
-                  width: 130px;
-                  height: 30px;
-                  margin-left: 220px;
-                  margin-top: 18px;">
-        <a type= "text" style="display:inline; 
+
+      <!-- botao login/cadastro-->
+
+      <div class="login">
+        <button class="BOTAO_CONTA" id="TESTE">MINHA CONTA
+        <a type= "text" style="display:flex; 
                                text-align:left;" href="index.html">
-         <img src="https://img.icons8.com/material-rounded/344/fa314a/user-male-circle.png" 
-           style="padding-left: 5px; 
-                  font-style: italic; 
-                  font-size: 18px; 
-                  border: none; 
-                  height: 30px; 
-                  width: 30px;" alt="Usuário"/></a>
-        
+         <img src="https://img.icons8.com/material-rounded/344/fa314a/user-male-circle.png" title="Acessar conta"
+           style="padding-left: 10px; 
+           font-style: italic; 
+           font-size: 18px; 
+           border: none; 
+           height: 30px; 
+           width: 35px;" alt="Usuário"/></a>
+        </button>
       </div>
        <br>
-      <div style="background-color: white; 
-                  border: solid 1px; 
-                  border-radius: 20px;
-                  height: 30px;
-                  width: 130px;
-                  margin-left: 15px;
-                  margin-top: 18px;">
+       
+     <!-- Botão carrinho-->
+
+      <div class="carrinho" >
+<button class="BOTAO_CARRINHO" id="TESTE">CARRINHO
+  
         <a type= "text" style="display:inline; 
                                text-align:left;" href="index.html">
          <img src="https://img.icons8.com/material-rounded/344/fa314a/sell-stock.png" 
@@ -74,239 +70,1420 @@
                   border: none; 
                   height: 30px; 
                   width: 30px;" alt="Carrinho"/></a>
+        </button>
+      </div>
+    </div>
+
+
+
+ <nav>
+ <ul>
+   <li><a href="#">TIMES DO BRASIL</a>
+     <div class="sub-times-br">
+        <ul>
+          <li><a href="#">América-MG</a></li>
+          <li><a href="#">Athletico-PR</a></li>
+          <li><a href="#">Atlético-GO</a></li>
+          <li><a href="#">Atlético-MG</a></li>
+          <li><a href="#">Avaí</a></li>
+          <li><a href="#">Botafogo</a></li>
+          <li><a href="#">Ceará</a></li>
+          <li><a href="#">Corinthians</a></li>
+          <li><a href="#">Coritib</a></li>
+          <li><a href="#">Cuiabá</a></li>
+          <li><a href="#">Flamengo</a></li>
+          <li><a href="#">Fluminense</a></li>
+          <li><a href="#">Fortaleza</a></li>
+          <li><a href="#">Goiás</a></li>
+          <li><a href="#">Internacional</a></li>
+          <li><a href="#">Juventude</a></li>
+          <li><a href="#">Palmeiras</a></li>
+          <li><a href="#">Red Bull Bragantino</a></li>
+          <li><a href="#">Santos</a></li>
+          <li><a href="#">São Paulo</a></li>
+        </li>
+        </ul>
+      </div>
+
+      
+ <li><a href="#">TIMES DA EUROPA</a>
+   <div class="sub-times-Europa">
+     <ul>
+       <li><a href="#">Real Madrid</a></li>
+       <li><a href="#">Barcelona</a></li>
+       <li><a href="#">Bayern</a></li>
+       <li><a href="#">Milan</a></li>
+       <li><a href="#">Boca Juniors</a></li>
+       <li><a href="#">Liverpool</a></li>
+       <li><a href="#">Ajax</a></li>
+       <li><a href="#">River Plate</a></li>
+       <li><a href="#">Peñarol</a></li>
+       <li><a href="#">Internazionale de Milão</a></li>
+       <li><a href="#">Benfica</a></li>
+       <li><a href="#">Al Ahly</a></li>
+       <li><a href="#">Porto</a></li>
+       <li><a href="#">Nacional-URU</a></li>
+       <li><a href="#">Independiente-ARG</a></li>
+       <li><a href="#">Glasgow Rangers</a></li>
+       <li><a href="#">Celtic</a></li>
+       <li><a href="#">Arsenal</a></li>
+     
+     </ul>
+    </div>
+</li>
+
+
+
+
+    
+<li><a href="#"> SELEÇÕES</a>                            
+   <div class="sub-seleções">
+    <ul>                                  
+      <li><a href="#">Brasil</a></li>
+      <li><a href="#">França</a></li>
+      <li><a href="#">Belgica</a></li>
+      <li><a href="#">Argentina/a></li>
+      <li><a href="#">Inglaterra</a></li>
+      <li><a href="#">Italia</a></li>
+      <li><a href="#">Espanha</a></li>
+      <li><a href="#">Portugal/a></li>
+      <li><a href="#">México/a></li>
+      <li><a href="#">Holanda</a></li>
+      <li><a href="#">Dinamarca</a></li>
+      <li><a href="#">Alemanha</a></li>
+      <li><a href="#">Uruguai</a></li>
+      <li><a href="#">Suiça</a></li>
+      <li><a href="#">Estados Unidos</a></li>
+      <li><a href="#">Croácia</a></li>
+      <li><a href="#">Colombia</a></li>
+      <li><a href="#">País de Gales</a></li>
+      <li><a href="#">Suécia</a></li>
+      <li><a href="#">Senegal</a></li>
+          
+        </li>
+      </ul>
+    </div>
+
+
         
-      </div>
-    </div>
-  </header>
-  
-  <nav style="margin-top: 9px;
-              background-color: blue;">
-    <select name="select" style="height: 30px; width: 249px;">
-          <option value="valor1" selected>TIMES DO BRASIL</option>
-          <option value="valor2" >América-MG</option>
-          <option value="valor3">Athletico-PR</option>
-          <option value="valor2" >Atlético-GO</option>
-          <option value="valor3">Atlético-MG</option>
-          <option value="valor2" >Avaí</option>
-          <option value="valor3">Botafogo</option>
-          <option value="valor2" >Ceará</option>
-          <option value="valor3">Corinthians</option>
-          <option value="valor2" >Coritiba</option>
-          <option value="valor3">Cuiabá</option>
-          <option value="valor2" >Flamengo</option>
-          <option value="valor3">Fluminense</option>
-          <option value="valor2" >Fortaleza</option>
-          <option value="valor3">Goiás</option>
-          <option value="valor2" >Internacional</option>
-          <option value="valor3">Juventude</option>
-          <option value="valor2" >Palmeiras</option>
-          <option value="valor3">Red Bull Bragantino</option>
-          <option value="valor2" >Santos</option>
-          <option value="valor3">São Paulo</option>
-        </select>
-
-        <select name="select" style="height: 30px; width: 249px;">
-          <option value="valor1" selected>TIMES INTERNACIONAIS</option>
-          <option value="valor2" >Real Madrid</option>
-          <option value="valor3">Barcelona</option>
-          <option value="valor2" >Bayern Munchen</option>
-          <option value="valor3">Juventus</option>
-          <option value="valor2" >Milan</option>
-          <option value="valor3">Boca Juniors</option>
-          <option value="valor2" >Liverpool</option>
-          <option value="valor3">Manchester United</option>
-          <option value="valor2" >Ajax</option>
-          <option value="valor3">River Plate</option>
-          <option value="valor2" >Peñarol</option>
-          <option value="valor3">Internazionale de Milão</option>
-          <option value="valor2" >Benfica</option>
-          <option value="valor3">Al Ahly</option>
-          <option value="valor2" >Porto</option>
-          <option value="valor3">Nacional-URU</option>
-          <option value="valor2" >Independiente-ARG</option>
-          <option value="valor3">Glasgow Rangers</option>
-          <option value="valor2" >Celtic</option>
-          <option value="valor3">Arsenal</option>
-        </select>
-
-        <select name="select" style="height: 30px; width: 249px;">
-          <option value="valor1" selected>SELEÇÕES</option>
-          <option value="valor2" >Brasil</option>
-          <option value="valor3">França</option>
-          <option value="valor2" >Bélgica</option>
-          <option value="valor3">Argentina</option>
-          <option value="valor2" >Inglaterra</option>
-          <option value="valor3">Itália</option>
-          <option value="valor2" >Espanha</option>
-          <option value="valor3">Portugal</option>
-          <option value="valor2" >México</option>
-          <option value="valor3">	Holanda</option>
-          <option value="valor2" >Dinamarca</option>
-          <option value="valor3">Alemanha</option>
-          <option value="valor2" >Uruguai</option>
-          <option value="valor3">Suíça</option>
-          <option value="valor2" >Estados Unidos</option>
-          <option value="valor3">Croácia</option>
-          <option value="valor2" >Colômbia</option>
-          <option value="valor3">País de Gales</option>
-          <option value="valor2" >Suécia</option>
-          <option value="valor3">	Senegal</option>
-        </select>
-
-        <select name="select" style="height: 30px; width: 249px;">
-          <option value="valor1" selected>MAIS OPÇÕES</option>
-          <option value="valor2" >América-MG</option>
-          <option value="valor3">Athletico-PR</option>
-          <option value="valor2" >Atlético-GO</option>
-          <option value="valor3">Atlético-MG</option>
-          <option value="valor2" >Avaí</option>
-          <option value="valor3">Botafogo</option>
-          <option value="valor2" >Ceará</option>
-          <option value="valor3">Corinthians</option>
-          <option value="valor2" >Coritiba</option>
-          <option value="valor3">Cuiabá</option>
-          <option value="valor2" >Flamengo</option>
-          <option value="valor3">Fluminense</option>
-          <option value="valor2" >Fortaleza</option>
-          <option value="valor3">Goiás</option>
-          <option value="valor2" >Internacional</option>
-          <option value="valor3">Juventude</option>
-          <option value="valor2" >Palmeiras</option>
-          <option value="valor3">Red Bull Bragantino</option>
-          <option value="valor2" >Santos</option>
-          <option value="valor3">São Paulo</option>
-        </select>
+            <li><a href="#">MAIS OPÇÕES</a>
+              <div class="sub-opcoes">
+              <ul>
+                    <li><a href="#">América-MG</a></li>
+                    <li><a href="#">Athletico-PR</a></li>
+                    <li><a href="#">Atlético-GO</a></li>
+                    <li><a href="#">Atlético-MG</a></li>
+                    <li><a href="#">Avaí</a></li>
+                    <li><a href="#">Botafogo</a></li>
+                    <li><a href="#">Ceará</a></li>
+                    <li><a href="#">Corinthians</a></li>
+                    <li><a href="#">Coritib</a></li>
+                    <li><a href="#">Cuiabá</a></li>
+                    <li><a href="#">Flamengo</a></li>
+                    <li><a href="#">Fluminense</a></li>
+                    <li><a href="#">Fortaleza</a></li>
+                    <li><a href="#">Goiás</a></li>
+                    <li><a href="#">Internacional</a></li>
+                    <li><a href="#">Juventude</a></li>
+                    <li><a href="#">Palmeiras</a></li>
+                    <li><a href="#">Red Bull Bragantino</a></li>
+                    <li><a href="#">Santos</a></li>
+                    <li><a href="#">São Paulo</a></li>
+                
+       </li>
+     </ul>
+          </div>
+          </ul>
   </nav>
-  <main style="background-color: green;">
-    <section class="Catalogo" id="catalogo" style="display: flex ;
-                                                   margin-top: 12px;">
-        <div class="card-wrapper">
-            <div class="card-item">
-                <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-                <div class="card-content">
-                  <h3>Camisa Varzea 01</h3>
-                  <p>
-                    Resumo e especificações sobre o produto.
-                  </p>
-                  <button type="button">COMPRAR!</button>
+</header>
+
+
+<!--AREA DE COMPRA-->
+
+
+																														
+					
+		<!--INICIO BANNER-->
+	<div class="
+		banner__1">
+							         
+     <div class="banner__ed"
+  
+  style="width: 718px; left: -718px;  opacity: 1;" 
+  abindex="-1" role="option" aria-describedby="slick-slide01">
+													
+  <img src="https://images.tcdn.com.br/img/img_prod/860761/1631133245_banner-varejo-atk-fut.png" 
+  alt="" title="" width="1390" height="700" class="banner__imagem_1"
+  style="">
+											</div>
+                    </div>
+                  </div>
+									
                 </div>
+		
+			
+			
+					</div></div>
+
+																					
+				
+                      <!--FIM DO BANNER-->
+
+
+    <div class="
+		banner__2">
+	<div class="banner vitrine">
+	<img src="https://images.tcdn.com.br/img/img_prod/860761/1599610918_banner_extra.png" 
+  alt="" title="" width="1300" height="125" class="banner__imagem_2 " 
+  style="display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 150px;
+  margin-left: 50px;" >
+				</div>
+			</div>
+
+
+				<!--FIM DO BANNER 2-->
+
+
+
+        <div class="card-wrapper">
+					
+          <div class="card-item">
+              <h2 class="Titulo__main" style=" display: flex;
+              justify-content: center;
+              align-items: center;  background-image: linear-gradient(BLUE, yellow);
+              height: 100px; color: white; font-size: 50px;">DESTAQUES </h2>
+            
+            
+            <main style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));">
+
+
+<!--PRODUTO 1-->
+
+              <section class="Catalogo" id="catalogo" style="display:flex ; 
+                                                             margin-top: 2px;">
+   <div id="pt-1"  class="img__produto" style=" display: grid;">
+    <div style="display: flex;">
+    <div>
+    <a href="">
+      <img class="Link__produto"
+         src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+         alt="Camisa do Brasil"
+         style="">
+       </div>   
+    </a>
+ </div>
+          
+   <div class="produto__1">
+     <h3 class="produto__1__h3">
+      <a href=""> Camisa do Brasil  </a></h3>
+        
+     <div class="Descrição_preços">
+        <div class="sub_linha_1">
+           <p class="descrição_preço">2 por R$ 00,00</p>
+     </div>
+
+       <div class="sub_linha_2">
+           <p class="descrição_preço">3 por R$ 00,00</p>
+      </div>
+   </div>
+            
+    
+               
+      <div class="parcelas_do_produto"><br>                            
+            <span class="preco-parc2"> Ou
+             <strong class="color"> 12x</strong> </span>
+    
+                     <span> de </span>
+           <span><strong>R$ 15,06</span> </strong>    
+                  <span> com tarifa </span>
+                  <div class="buttons__comprar">
+                    <button type="button">COMPRAR!</button>
+                    </div>   
               </div>
-          <div class="card-item">
-            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-            <div class="card-content">
-              <h3>Camisa Varzea 01</h3>
-              <p>
-                Resumo e especificações sobre o produto.
-              </p>
-              <button type="button">COMPRAR!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-            <div class="card-content">
-              <h3>Camisa Varzea 01</h3>
-              <p>
-                Resumo e especificações sobre o produto.
-              </p>
-              <button type="button">COMPRAR!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-            <div class="card-content">
-              <h3>Camisa Varzea 01</h3>
-              <p>
-                Resumo e especificações sobre o produto.
-              </p>
-              <button type="button">COMPRAR!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-            <div class="card-content">
-              <h3>Camisa Varzea 01</h3>
-              <p>
-                Resumo e especificações sobre o produto.
-              </p>
-              <button type="button">COMPRAR!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-            <div class="card-content">
-              <h3>Camisa Varzea 01</h3>
-              <p>
-                Resumo e especificações sobre o produto.
-              </p>
-              <button type="button">COMPRAR!</button>
-            </div>
+            </div>		
+          
+      
+   
+                
+  <!--PRODUTO 2-->
+                  
+                
+     <div id="pt-2" class="img__produto">
+      <div>
+      <a href="">
+        <img class="Link__produto"
+           src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+           alt="Camisa do Brasil"
+           style="">
+         </div>   
+      </a>
+   </div>
+            
+     <div class="produto__1">
+       <h3 class="produto__1__h3">
+        <a href=""> Camisa do Brasil  </a></h3>
+          
+       <div class="Descrição_preços">
+          <div class="sub_linha_1">
+             <p class="descrição_preço">2 por R$ 00,00</p>
+       </div>
+  
+         <div class="sub_linha_2">
+             <p class="descrição_preço">3 por R$ 00,00</p>
         </div>
-        <h3>Os mais vendidos</h3>
+     </div>
+              
+      
+                 
+        <div class="parcelas_do_produto"><br>                            
+              <span class="preco-parc2"> Ou
+               <strong class="color"> 12x</strong> </span>
+      
+                       <span> de </span>
+             <span><strong>R$ 15,06</span> </strong>    
+                    <span> com tarifa </span>
+                    <div class="buttons__comprar">
+                    <button type="button">COMPRAR!</button>
+                    </div>     
+                </div>
+              </div>		
+            
+                
+     <!--PRODUTO 3-->
+        
+                                 
+                          
+              <div class="img__produto">
+                <div>
+                <a href="">
+                  <img class="Link__produto"
+                     src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+                     alt="Camisa do Brasil"
+                     style="">
+                   </div>   
+                </a>
+             </div>
+                      
+               <div class="produto__1">
+                 <h3 class="produto__1__h3">
+                  <a href=""> Camisa do Brasil  </a></h3>
+                    
+                 <div class="Descrição_preços">
+                    <div class="sub_linha_1">
+                       <p class="descrição_preço">2 por R$ 00,00</p>
+                 </div>
+            
+                   <div class="sub_linha_2">
+                       <p class="descrição_preço">3 por R$ 00,00</p>
+                  </div>
+               </div>
+                        
+                
+                           
+                  <div class="parcelas_do_produto"><br>                            
+                        <span class="preco-parc2"> Ou
+                         <strong class="color"> 12x</strong> </span>
+                
+                                 <span> de </span>
+                       <span><strong>R$ 15,06</span> </strong>    
+                              <span> com tarifa </span>
+                              <div class="buttons__comprar">
+                              <button type="button">COMPRAR!</button>
+                              </div>     
+                          </div>
+                        </div>		
+                      
+
+
+<!--PRODUTO 4-->
+
+
+<div class="img__produto">
+                <div>
+                <a href="">
+                  <img class="Link__produto"
+                     src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+                     alt="Camisa do Brasil"
+                     style="">
+                   </div>   
+                </a>
+             </div>
+                      
+               <div class="produto__1">
+                 <h3 class="produto__1__h3">
+                  <a href=""> Camisa do Brasil  </a></h3>
+                    
+                 <div class="Descrição_preços">
+                    <div class="sub_linha_1">
+                       <p class="descrição_preço">2 por R$ 00,00</p>
+                 </div>
+            
+                   <div class="sub_linha_2">
+                       <p class="descrição_preço">3 por R$ 00,00</p>
+                  </div>
+               </div>
+                        
+                
+                           
+                  <div class="parcelas_do_produto"><br>                            
+                        <span class="preco-parc2"> Ou
+                         <strong class="color"> 12x</strong> </span>
+                
+                                 <span> de </span>
+                       <span><strong>R$ 15,06</span> </strong>    
+                              <span> com tarifa </span>
+                              <div class="buttons__comprar">
+                              <button type="button">COMPRAR!</button>
+                              </div>     
+                          </div>
+                        </div>		
+                      
+
+
+  <!--PRODUTO 5-->
+
+  <div class="img__produto">
+    <div>
+    <a href="">
+      <img class="Link__produto"
+         src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+         alt="Camisa do Brasil"
+         style="">
+       </div>   
+    </a>
+ </div>
+          
+   <div class="produto__1">
+     <h3 class="produto__1__h3">
+      <a href=""> Camisa do Brasil  </a></h3>
+        
+     <div class="Descrição_preços">
+        <div class="sub_linha_1">
+           <p class="descrição_preço">2 por R$ 00,00</p>
+     </div>
+
+       <div class="sub_linha_2">
+           <p class="descrição_preço">3 por R$ 00,00</p>
+      </div>
+   </div>
+            
+    
+               
+      <div class="parcelas_do_produto"><br>                            
+            <span class="preco-parc2"> Ou
+             <strong class="color"> 12x</strong> </span>
+    
+                     <span> de </span>
+           <span><strong>R$ 15,06</span> </strong>    
+                  <span> com tarifa </span>
+                  <div class="buttons__comprar">
+                  <button type="button">COMPRAR!</button>
+                  </div>     
+              </div>
+            </div>		
+          
+
+
+
+<!--PRODUTO 6-->
+
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
     </div>
-    <div class="card-wrapper">
-        <div class="card-item">
-            <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-            <div class="card-content">
-              <h3>Camisa Varzea 01</h3>
-              <p>
-                Resumo e especificações sobre o produto.
-              </p>
-              <button type="button">COMPRAR!</button>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
             </div>
-          </div>
-      <div class="card-item">
-        <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-        <div class="card-content">
-          <h3>Camisa Varzea 01</h3>
-          <p>
-            Resumo e especificações sobre o produto.
-          </p>
-          <button type="button">COMPRAR!</button>
-        </div>
-      </div>
-      <div class="card-item">
-        <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-        <div class="card-content">
-          <h3>Camisa Varzea 01</h3>
-          <p>
-            Resumo e especificações sobre o produto.
-          </p>
-          <button type="button">COMPRAR!</button>
-        </div>
-      </div>
-      <div class="card-item">
-        <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-        <div class="card-content">
-          <h3>Camisa Varzea 01</h3>
-          <p>
-            Resumo e especificações sobre o produto.
-          </p>
-          <button type="button">COMPRAR!</button>
-        </div>
-      </div>
-      <div class="card-item">
-        <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-        <div class="card-content">
-          <h3>Camisa Varzea 01</h3>
-          <p>
-            Resumo e especificações sobre o produto.
-          </p>
-          <button type="button">COMPRAR!</button>
-        </div>
-      </div>
-      <div class="card-item">
-        <img src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" alt="Car" />
-        <div class="card-content">
-          <h3>Camisa Varzea 01</h3>
-          <p>
-            Resumo e especificações sobre o produto.
-          </p>
-          <button type="button">COMPRAR!</button>
-        </div>
+          </div>		
+        
+
+<!-- PRODUTO 7-->
+		
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
     </div>
-    </section>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>		
+        
+
+
+<!--PRODUTO 8-->
+
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>		
+        
+
+
+<!-- PRODUTO 9-->
+
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>		
+        
+
+
+<!-- PRODUTO 10-->
+
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+
+
+  <!-- MAIS VENDIDOS-->          
+            <div class="card-item">
+              <h2 class="Titulo__main" style=" display: flex;
+              justify-content: center;
+              align-items: center;  background-image: linear-gradient(BLUE, yellow);
+              height: 100px;width: 1350px;margin-top: 5px; color: white; font-size: 50px;">MAIS VENDIDO</h2>
+          </div>	
+
+
+<!-- PRODUTO 1-->
+
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>		
+        
+<!-- PRODUTO 2-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>		
+        
+<!-- PRODUTO 3-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+
+<!-- PRODUTO 4-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 5-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 6-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 7-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 8-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 9-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 10-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 11-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 12-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 13-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 14-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 15-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+<!-- PRODUTO 16-->
+
+<div class="img__produto">
+  <div>
+  <a href="">
+    <img class="Link__produto"
+       src="https://www.oficinadoabada.com.br/wp-content/uploads/2019/07/camisa-de-time-personalizada-catn-102-300x300.png" 
+       alt="Camisa do Brasil"
+       style="">
+     </div>   
+  </a>
+</div>
+        
+ <div class="produto__1">
+   <h3 class="produto__1__h3">
+    <a href=""> Camisa do Brasil  </a></h3>
+      
+   <div class="Descrição_preços">
+      <div class="sub_linha_1">
+         <p class="descrição_preço">2 por R$ 00,00</p>
+   </div>
+
+     <div class="sub_linha_2">
+         <p class="descrição_preço">3 por R$ 00,00</p>
+    </div>
+ </div>
+          
+  
+             
+    <div class="parcelas_do_produto"><br>                            
+          <span class="preco-parc2"> Ou
+           <strong class="color"> 12x</strong> </span>
+  
+                   <span> de </span>
+         <span><strong>R$ 15,06</span> </strong>    
+                <span> com tarifa </span>
+                <div class="buttons__comprar">
+                <button type="button">COMPRAR!</button>
+                </div>     
+            </div>
+          </div>	
+
+
+
+
+
+
+        	</div>
+        </div>
+        </section>
+<!--CAIXAS DE LINKS-->
+
+
+
+
+<div class="CAIXAS_LINKS" style="display: inline-flex; ">
+					
+		
+	<div class="
+		banner__container1
+	">
+							<div class="CAIXA-LINK-NOV">
+									<a href="" class="banner__link">
+									<img src="https://static.wixstatic.com/media/9381a9_a57787af8a5043e2bb7999597643f7bb.jpg" 
+                  alt="" title="NOVIDADES" width="300" height="300" style="">
+									</a>
+							</div>
+			</div>
+				
+					
+		
+	<div class="banner__container2">
+							<div class="CAIXA-LINK-ATACADO">
+									<a href="" class="banner__link">
+									<img src="https://cdn.simplo7.net/static/11997/galeria/152960003364833.png"
+                   alt="" title="ATACADO" width="300" height="300"  style="">
+									</a>
+							</div>
+			</div>
+				
+					
+		
+	<div class="banner__container3">
+							<div class="CAIXA-LINK-PERG">
+									<a href="" class="banner__link">
+									<img src="http://bomsucessodosul.pr.gov.br/wp-content/uploads/2021/02/preguntas-frequentes.jpg" 
+                  alt="" title="PERGUNTAS" width="300" height="300" style="">
+									</a>
+                  
+							</div>
+              
+			</div>
+			</div>
+
+
+
+
+
+<!--ESTA CAIXA BOX PRECISARÁ SER COLOCADA NO FOOTER DEPOIS-->
+
+    <div class="footer__boxMSG">
+			<div class="centralizado">
+				<form class="Box_footer" action="" method="POST">
+	<input type="hidden" name="loja" value="860761">
+	
+	
+	
+	<h2 class="seu-email">
+					Deixe seu e-mail e receba nossas promoções exclusivas:
+  </h2>
+
+	<input class="nome__input"  type="text" aria-label="Nome" placeholder="Digite seu nome" required="">      
+
+	<input class="email__input" type="email" aria-label="E-mail" placeholder="Digite seu e-mail" required="">
+
+	<input type="text" name="phone" id="phone" autocomplete="off" aria-label="Não preencha este campo; mantenha-o vazio." placeholder="Telefone/Cel">
+<div class="receber_button">
+	<button type="button"  class="button" >
+					Receber Ofertas
+			</button></div>
+
+      
+</form>			</div>
+		</div>
+
+
+
+
+
   </main>
   <footer style="background-color: silver;">
+   
+    
     <div>
         
         <div>
